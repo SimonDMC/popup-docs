@@ -1,5 +1,5 @@
 Welcome to the documentation of popup-js!
-===================================
+==========================================
 
 **This** is a placeholder while i figure out how this thing *works*.
 
