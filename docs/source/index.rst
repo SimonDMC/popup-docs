@@ -5,7 +5,7 @@ Welcome to the documentation of popup-js!
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
-Does :doc:`maybe` work?
+Bet this fixed it lmao
 
 .. note::
 
@@ -18,4 +18,3 @@ Contents
 
    usage
    api
-   maybe
