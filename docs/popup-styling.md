@@ -107,7 +107,7 @@ define the following CSS rule in a stylesheet.
 }
 ```
 
-If you are using multiple popups on the same page, you can use the [popup ID](basic-properties#id)
+If you are using multiple popups on the same page, you can use the [popup ID](./basic-properties#id)
 to distinguish between individual popups. Applying the above example to a popup
 with an ID of `instructions` would look like such: 
 

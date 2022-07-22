@@ -1,4 +1,5 @@
-# Welcome to the popup-js documentation!
+Home
+====
 
 **popup-js** is a sleek and highly customizable JavaScript library used to generate 
 full-screen infographic popups with minimal effort.
