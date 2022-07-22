@@ -7,11 +7,11 @@ Installation
 Install `popup-js` using a script tag.
 
 ```html
-  [TODO] <script src="https://cdn.jsdelivr.net/npm/popup-js@latest/popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popup-js@latest/popup.min.js"></script>
 ```
 through npm or
 ```html
-  [TODO] <script src="https://cdn.jsdelivr.net/gh/SimonDMC/popup-js/src/popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/SimonDMC/popup-js/src/popup.min.js"></script>
 ```
 through github.
 
