@@ -126,7 +126,7 @@ the following CSS code snippet.
 
 ```css
 /* optional .popup */ .popup-content {
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 ```
 
