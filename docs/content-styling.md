@@ -48,7 +48,7 @@ content: `
 Line properties
 ---------------
 The library also provides useful methods for styling
-and entire line.
+an entire line.
 
 A line with a larger upper margin would be defined using
 the `big-margin§<text>` syntax.
