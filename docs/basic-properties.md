@@ -62,7 +62,7 @@ The `widthMultiplier` parameter sets the relative width of the popup.
 By default, a popup is 770px wide unless that covers more than 90% of the screen width,
 in which case the popup width is set to 90% of the screen width. The final width
 equates to the default width times the width multiplier, so a value of 0.8 would
-cover 616px or at maximum 64% of the screen width.
+cover 616px or at maximum 72% of the screen width.
 
 Height Multiplier
 -----------
