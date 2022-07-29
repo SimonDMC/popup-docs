@@ -35,6 +35,14 @@ The `closeColor` parameter sets the color of the popup close button.
 |--------------|---------|---------------|
 | `closeColor` | `color` | `#000000`     |
 
+Link Color
+----------
+The `closeColor` parameter sets the color of links within the popup body.
+
+| Name        | Type    | Default Value |
+|-------------|---------|---------------|
+| `linkColor` | `color` | `#383838`     |
+
 Side Margin
 -----------
 The `sideMargin` parameter sets the inner margin on the popup content sides.

@@ -83,3 +83,13 @@ increase the height.
     value in order to maintain responsiveness. You could, however, override it
     using [Overriding Styles](../popup-styling#overriding-styles).
 
+Font Size Multiplier
+--------------------
+The `heightMultiplier` parameter sets the relative text size within the popup body.
+
+| Name                 | Type    | Default Value |
+|----------------------|---------|---------------|
+| `fontSizeMultiplier` | `float` | `1`           |
+
+Similarly to the popup width formula, the popup text size is calculated as the
+smaller value from 25px * multiplier and 5.5% of window width * multiplier.
