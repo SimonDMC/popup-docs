@@ -60,3 +60,18 @@ myPopup.show();
     instead as it has no fade in and is optimized for loading as soon as
     all the necessary files have downloaded.
 
+Closing a popup
+---------------
+You can force close an open popup by calling the `.hide()` method.
+
+Example:
+```javascript
+const myPopup = new Popup({
+  ...
+});
+
+myPopup.show();
+// keep popup open for 2 seconds
+await sleep(2000);
+myPopup.hide();
+```
