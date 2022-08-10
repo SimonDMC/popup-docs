@@ -47,3 +47,17 @@ call, so any subsequent show method calls will still work.
     so reloading the page before closing the popup will still
     display it.
 
+Allow Close
+-----------
+
+The `allowClose` parameter controls whether or not
+the user can close the popup.
+
+| Name         | Type      | Default Value |
+|--------------|-----------|---------------|
+| `allowClose` | `boolean` | `true`        |
+
+If you're using the popup as a prompt and awaiting the user's
+decision, not letting the user close the popup might be useful.
+The popup can still be closed using the [.hide() method](../usage#closing-a-popup),
+so this lets you control when exactly the popup goes away.

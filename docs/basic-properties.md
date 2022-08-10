@@ -26,7 +26,6 @@ Omitting the ID should not cause issues if none of the above are
 used, though it is still recommended to give your popups an ID,
 for example your [popup title](../basic-properties#title) in [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case).
 
-
 Title
 -----
 The `title` parameter sets the title of the popup shown.
@@ -35,10 +34,9 @@ The `title` parameter sets the title of the popup shown.
 |---------|----------|---------------|
 | `title` | `string` | `Popup Title` |
 
-This paramater is the heading for your project/popup, so it should
+This parameter is the heading for your project/popup, so it should
 ideally be short but descriptive. Omitting the title is not
 recommended.
-
 
 Content
 -------
@@ -93,3 +91,24 @@ The `heightMultiplier` parameter sets the relative text size within the popup bo
 
 Similarly to the popup width formula, the popup text size is calculated as the
 smaller value from 25px * multiplier and 5.5% of window width * multiplier.
+
+Border Radius
+-------------
+The `borderRadius` parameter controls how rounded the popup content
+corners are.
+
+| Name           | Type     | Default Value |
+|----------------|----------|---------------|
+| `borderRadius` | `length` | `15px`        |
+
+Fade Time
+---------
+The `fadeTime` parameter sets how long the popup fades in and out
+when calling the show/hide methods or closing the popup.
+
+| Name       | Type       | Default Value |
+|------------|------------|---------------|
+| `fadeTime` | `duration` | `0.3s`        |
+
+Note there is currently only one value for both fading in and 
+out for each popup.

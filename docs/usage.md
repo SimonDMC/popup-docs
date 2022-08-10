@@ -7,11 +7,11 @@ Installation
 Install `popup-js` using a script tag.
 
 ```html
-  <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.1.1/popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.2.0/popup.min.js"></script>
 ```
 using npm or
 ```html
-  <script src="https://cdn.jsdelivr.net/gh/SimonDMC/popup-js@1.1.1/popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/SimonDMC/popup-js@1.2.0/popup.min.js"></script>
 ```
 using github.
 
@@ -30,13 +30,13 @@ const myPopup = new Popup({
 });
 ```
 
-Though not recommended, you can also create a popup leaving the parameters empty, using all the default values.
+Though not recommended, you can also create a popup without any parameters, using all the default values.
 
 ```javascript
-const myPopup = new Popup({});
+const myPopup = new Popup();
 ```
 
-With the way the library works, no paramaters are required, as they all have their default values, and
+With the way the library works, no parameters are required, as they all have their default values, and
 you won't need to use *most* of them *most* of the time, so changing only a few values should be
 enough in *most* cases.
 

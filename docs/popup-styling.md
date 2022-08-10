@@ -129,12 +129,12 @@ Overriding Styles
 -----------------
 
 You can also override pre-defined popup styles using the CSS `!important` tag.
-For example, removing the rounded corners from all popups would be done using 
+For example, changing the font family for all popups would be done using 
 the following CSS code snippet.
 
 ```css
-/* optional .popup */ .popup-content {
-    border-radius: 0 !important;
+.popup {
+    font-family: 'Verdana', sans-serif !important;
 }
 ```
 
