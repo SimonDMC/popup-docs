@@ -5,13 +5,13 @@
 Install `popup-js` using a script tag.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.3.0/popup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.3.1/popup.min.js"></script>
 ```
 
 using npm or
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SimonDMC/popup-js@1.3.0/popup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SimonDMC/popup-js@1.3.1/popup.min.js"></script>
 ```
 
 using github.
