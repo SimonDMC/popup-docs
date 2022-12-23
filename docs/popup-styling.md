@@ -119,56 +119,117 @@ content.
     having a consistent button width is useful when dealing with multiple left
     or right aligned buttons.
 
+## Font
+
+The `font` parameter sets the font family of the popup content.
+
+| Name   | Type     | Default Value |
+| ------ | -------- | ------------- |
+| `font` | `string` | `Inter`       |
+
+The default font is [Inter](https://rsms.me/inter/), which comes
+pre-imported with the popup library. You can pass a web-safe font
+family, or a font family that you have imported into your project.
+
+The easiest way to import a font is to add an `@import` statement
+to the top of the css parameter.
+
+```js
+new Popup({
+    content: "This is in Roboto!",
+    font: "Roboto",
+    css: `@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');`,
+});
+```
+
+If the passed font is not found, the popup font will fall back to
+Inter.
+
+## Text Shadow
+
+The `textShadow` parameter sets the text shadow of the popup.
+
+| Name         | Type     | Default Value |
+| ------------ | -------- | ------------- |
+| `textShadow` | `string` | `none`        |
+
+This parameter accepts a string in the format of the
+[CSS text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
+property.
+
+Keep in mind the text shadow applies to the entire popup, not just
+the content. This means that the title and close button will also
+be affected by the text shadow.
+
 ## Custom Styles
 
 If you want to style a specific part of a popup outside of the realm
-of the built-in properties, you can do so via an external stylesheet.
+of the built-in properties, you can do so via the `css` parameter.
 
 The selector for any popup is `.popup`, the hierarchy then goes as such:
 
 ```
+
 .popup
-  └ .popup-content
-      └ .popup-header
-          └ .popup-title
-              └ Title
-          └ .popup-close
-              └ Close Button
-      └ .popup-body
-          └ Content
+└ .popup-content
+└ .popup-header
+└ .popup-title
+└ Title
+└ .popup-close
+└ Close Button
+└ .popup-body
+└ Content
 
 ```
 
 For example, if you wanted to make the header text bold, you could
-define the following CSS rule in a stylesheet.
+pass the following CSS code snippet to the `css` parameter.
 
-```css
-/* optional .popup */
-.popup-header {
-    font-weight: bold;
-}
+```js
+new Popup({
+    ...
+    css: `
+        /* optional .popup */
+        .popup-header {
+            font-weight: bold;
+        }`
+});
 ```
 
 If you are using multiple popups on the same page, you can use the [popup ID](../basic-properties#id)
 to distinguish between individual popups. Applying the above example to a popup
 with an ID of `instructions` would look like such:
 
-```css
-.popup.instructions .popup-header {
-    font-weight: bold;
-}
+```js
+new Popup({
+    ...
+    css: `
+        .popup.instructions .popup-header {
+            font-weight: bold;
+        }`
+});
 ```
 
 ## Overriding Styles
 
 You can also override pre-defined popup styles using the CSS `!important` tag.
-For example, changing the font family for all popups would be done using
-the following CSS code snippet.
+For example, changing the background color of all popups to red would look like
+this:
 
-```css
-.popup {
-    font-family: "Verdana", sans-serif !important;
-}
+```js
+new Popup({
+    ...
+    css: `
+        .popup {
+            background-color: red !important;
+        }`
+});
 ```
 
 The above rules also apply to specific popup styling.
+
+!!! note
+
+    When targeting a specific popup, using the `!important` tag is
+    often not necessary, as the popup ID will override the default
+    styling.

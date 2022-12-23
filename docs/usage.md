@@ -2,19 +2,11 @@
 
 ## Installation
 
-Install `popup-js` using a script tag.
+Install `popup-js` with the following script tag.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.3.1/popup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.0/popup.min.js"></script>
 ```
-
-using npm or
-
-```html
-<script src="https://cdn.jsdelivr.net/gh/SimonDMC/popup-js@1.3.1/popup.min.js"></script>
-```
-
-using github.
 
 ## Creating a popup
 
@@ -74,6 +66,39 @@ myPopup.show();
 // keep popup open for 2 seconds
 await sleep(2000);
 myPopup.hide();
+```
+
+## Load Callback
+
+You can add a callback function to be called when the popup and all its
+contents are first loaded with the `loadCallback` parameter.
+
+Example:
+
+```js
+new Popup({
+    loadCallback: () => {
+        console.log("Popup loaded!");
+    },
+});
+```
+
+This is useful for, for example, adding event listeners to the popup's
+elements.
+
+Example:
+
+```js
+new Popup({
+    content: `
+        {btn-popup-button}[Click me!]`,
+    loadCallback: () => {
+        const button = document.querySelector(".popup-button");
+        button.addEventListener("click", () => {
+            console.log("Button clicked!");
+        });
+    },
+});
 ```
 
 ## Close Callback
