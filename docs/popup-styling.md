@@ -36,7 +36,7 @@ The `closeColor` parameter sets the color of the popup close button.
 
 ## Link Color
 
-The `closeColor` parameter sets the color of links within the popup body.
+The `linkColor` parameter sets the color of links within the popup body.
 
 | Name        | Type    | Default Value |
 | ----------- | ------- | ------------- |
