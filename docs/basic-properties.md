@@ -82,7 +82,7 @@ increase the height.
 
 ## Font Size Multiplier
 
-The `heightMultiplier` parameter sets the relative text size within the popup body.
+The `fontSizeMultiplier` parameter sets the relative text size within the popup body.
 
 | Name                 | Type    | Default Value |
 | -------------------- | ------- | ------------- |
