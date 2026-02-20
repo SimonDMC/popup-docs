@@ -5,7 +5,7 @@
 Install `popup-js` with the following script tag.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.4/popup.min.js"></script>
 ```
 
 ## Creating a popup
